@@ -4,7 +4,6 @@ compatibility_date = "2024-01-01"
 [vars]
 ENVIRONMENT = "production"
 
-# Environment-specific configurations
 [env.production]
 vars = { ENVIRONMENT = "production" }
 
@@ -13,3 +12,11 @@ vars = { ENVIRONMENT = "preview" }
 
 [env.development]
 vars = { ENVIRONMENT = "development" }
+
+[pages_build_output_dir]
+directory = ".next/static"
+
+[[pages_build]]
+command = "npm run build"
+cwd = "."
+
