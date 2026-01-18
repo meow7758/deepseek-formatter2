@@ -13,10 +13,5 @@ vars = { ENVIRONMENT = "preview" }
 [env.development]
 vars = { ENVIRONMENT = "development" }
 
-[pages_build_output_dir]
-directory = ".next/static"
-
-[[pages_build]]
-command = "npm run build"
-cwd = "."
+pages_build_output_dir = ".vercel/output/static"
 
